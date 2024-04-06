@@ -32,3 +32,8 @@ customer_name text,
 item_price money,
 quantity integer
 );"""
+
+cursor.execute(authors_query)
+cursor.execute(books_query)
+cursor.execute(sale_items_query)
+conn.close()
