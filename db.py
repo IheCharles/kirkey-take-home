@@ -1,5 +1,5 @@
 import pymysql
-import datetime
+
 conn = pymysql.connect(
     host='sql3.freesqldatabase.com', 
     user='sql3697196',
@@ -56,7 +56,7 @@ INSERT INTO authors (name, email, date_of_birth) VALUES
 """
 cursor.execute(authors_insert)
 
-# Insert books
+
 books_insert = """
 INSERT INTO books (author_id, isbn) VALUES
 (1, '123-4-5678-9101-1'),
@@ -74,7 +74,7 @@ INSERT INTO books (author_id, isbn) VALUES
 """
 cursor.execute(books_insert)
 
-# Insert sale_items
+
 sale_items_insert = """
 INSERT INTO sale_items (book_id, customer_name, item_price, quantity) VALUES
 (1, 'Betty Booklover', 19.99, 91),

@@ -1,8 +1,8 @@
 from flask import Flask, jsonify  
 import pymysql
-import json
+from flask_cors import CORS
 app = Flask(__name__)
-
+CORS(app, resources={r"/*": {"origins": "*"}}) 
 def db_connection_init():
     conn = None
     try: 
