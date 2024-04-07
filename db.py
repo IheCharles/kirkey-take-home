@@ -41,18 +41,18 @@ cursor.execute(sale_items_query)
 
 authors_insert = """
 INSERT INTO authors (name, email, date_of_birth) VALUES
-('J.K. Rolling', 'jk.rolling@example.com', '1965-07-31'),
-('Charles Iheanetu', 'cci29@drexel.edu', '984-09-15'),
-('Kiren Kochinski', 'Kiren.Kochinski@example.com', '1899-07-21'),
-('Clark Kent', 'Clark.Kent@example.com', '1960-04-23'),
+('J.K. Rolling', 'jk.rolling@example.com', '1980-09-01'),
+('Charles Iheanetu', 'cci29@drexel.edu', '1984-09-05'),
+('Ian Kochinski', 'Kiren.Kochinski@example.com', '1987-11-11'),
+('Clark Kent', 'Clark.Kent@example.com', '2019-04-23'),
 ('Peter parker', 'preter.parker@example.com', '1984-09-15'),
-('bruse.wayne', 'bruse.wayne@example.com', '2099-07-21'),
+('bruse wayne', 'bruse.wayne@example.com', '2001-12-12'),
 ('jame jonah jameson', 'jame.jonah.jameson@example.com', '1980-07-31'),
 ('Tony Stark', 'tony.stark@example.com', '1984-09-15'),
-('Bruce Banner', 'Bruce.Banner@example.com', '1899-07-21'),
-('Thor Odinson', 'Thor.Odinson@example.com', '1965-07-31'),
-('Janet van Dyne', 'Janet.van.Dyne@example.com', '1904-09-15'),
-('Joe Biden', 'JoeBiden2024@example.com', '3899-07-21');
+('Bruce Banner', 'Bruce.Banner@example.com', '2000-07-21'),
+('Thor Odinson', 'Thor.Odinson@example.com', '2004-04-03'),
+('Janet van Dyne', 'Janet.van.Dyne@example.com', '1994-09-10'),
+('Joe Biden', 'JoeBiden2024@example.com', '1999-07-21');
 """
 cursor.execute(authors_insert)
 

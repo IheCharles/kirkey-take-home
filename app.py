@@ -41,6 +41,11 @@ def home(author=None):
             a.name;
         """
         cursor.execute(query, (author,))
+        results = cursor.fetchall()
+
+        if not results:
+            conn.close()
+            return jsonify({'error': f'Author "{author}" not found'}), 404
     else:
         query = """
         SELECT
@@ -58,9 +63,9 @@ def home(author=None):
             total_revenue DESC
         LIMIT 10;
         """
-        cursor.execute(query)
+        cursor.execute(query, (author,))
+        results = cursor.fetchall()
 
-    results = cursor.fetchall()
     conn.close()
     
     return jsonify(results)
