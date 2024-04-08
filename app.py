@@ -63,7 +63,7 @@ def home(author=None):
             total_revenue DESC
         LIMIT 10;
         """
-        cursor.execute(query, (author,))
+        cursor.execute(query)
         results = cursor.fetchall()
 
     conn.close()
